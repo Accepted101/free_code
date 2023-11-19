@@ -11,7 +11,8 @@ type trie struct {
 }
 
 func (*trie) insert(x int) {
-	node := root
-	for node
-
+	now := root
+	for x != 0 {
+		now = now.children[x&1]
+	}
 }
